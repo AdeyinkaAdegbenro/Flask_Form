@@ -1,1 +1,0 @@
-This is a flask app that demonstrates how to create a form using the Flask framework
