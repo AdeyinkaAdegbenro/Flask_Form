@@ -8,6 +8,7 @@ function submitFunction (event) {
   address = $('#address').val()
   hobby = $('#hobby').val()
   console.log('values,', first_name, middle_name, last_name, date_of_birth, address, hobby)
+  $('#my_form').hide()
 
   // send  to server
   data = {
@@ -30,6 +31,7 @@ function submitFunction (event) {
     dataType: 'json'
   });
   
-  
+  message = 'Your data has been sent to the server'
+  $('#message').append(message)
   return false
 }
